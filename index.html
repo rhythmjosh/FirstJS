@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Click the smiley to interact</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h1{
+            text-align: center;
+            color:whitesmoke;
+        }
+    </style>
+    <script type="text/javascript">
+             function touchFace()   {
+             var userName = prompt("What is your name?", "Enter your name here");
+                 if (userName){
+                     alert("It is nice to meet you, " + userName + ".");
+                     document.getElementById("smileyface").src="images/smiley2.png";
+                 }
+ }
+    </script>
+</head>
+<body onload = alert('Hello, Thanks for visiting my page. I am a smiley.')>
+<h1>My first Javascript experiment</h1>
+    <div style="text-align: center">
+      <img src="images/smiley1.jpg" height="400" width="400" alt="smiley1" id="smileyface" style="cursor:pointer; margin:25px" onclick="touchFace()">
+    </div>
+</body>
+</html>
